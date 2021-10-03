@@ -25,4 +25,7 @@ export default {
   background: linear-gradient(200deg,#251c79,#0e0822 70.71%);
   overflow-x: hidden;
 }
+.ofC{
+  object-fit: contain;
+}
 </style>

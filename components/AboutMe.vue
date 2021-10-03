@@ -9,9 +9,9 @@
       <h1 class="skills"> Compétences Techniques </h1>
 
       <aside class="languages">
-        <img class="logo" src="../assets/icon/vue.webp" alt="Vue.js">
-        <img class="logo" src="../assets/icon/laravel.webp" alt="Laravel">
-        <img class="logo" src="../assets/icon/mysql.webp" alt="MySQL">
+        <img class="logo ofC" src="../assets/icon/vue.webp" alt="Vue.js">
+        <img class="logo ofC" src="../assets/icon/laravel.webp" alt="Laravel">
+        <img class="logo ofC" src="../assets/icon/mysql.webp" alt="MySQL">
       </aside>
 
       <div class="w-full btnDiv justify-center align-middle flex btn">

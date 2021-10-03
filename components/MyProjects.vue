@@ -10,8 +10,8 @@
         <p class="text-white text-2xl shopApp">Langages utilisés : <span class="font-bold">Vue.js</span> et <span class="font-bold">Ionic</span></p>
 
         <aside class="d-flex justify-around align-middle mt-14">
-          <img class="w-28 shopApp" src="../assets/icon/ionic.webp" alt="Ionic">
-          <img class="w-28 shopApp" src="../assets/icon/vue.webp" alt="Vue.js">
+          <img class="w-28 shopApp ofC" src="../assets/icon/ionic.webp" alt="Ionic">
+          <img class="w-28 shopApp ofC" src="../assets/icon/vue.webp" alt="Vue.js">
         </aside>
       </div>
     </div>
@@ -20,11 +20,11 @@
       <div class="d-flex flex-col mx-9">
         <p class="text-white text-2xl eshop">Projet d'e-commerce effectué en Full Stack en fin de 2ème année.</p>
         <p class="text-white text-2xl eshop">Langages utilisés : <span class="font-bold">Vue.js</span> et <span class="font-bold">Laravel</span></p>
-        <p class="text-white text-2xl eshop">Lien version Desktop : <a class="shop font-bold" href="https://heavens-shop.herokuapp.com/" target="_blank">E-commerce</a></p>
+        <p class="text-white text-2xl eshop">Lien version Desktop : <a class="shop font-bold" rel="noopener" href="https://heavens-shop.herokuapp.com/" target="_blank">E-commerce</a></p>
 
         <aside class="d-flex justify-around align-middle mt-14">
-          <img class="w-28 eshop" src="../assets/icon/vue.webp" alt="Vue.js">
-          <img class="w-28 eshop" src="../assets/icon/laravel.webp" alt="laravel">
+          <img class="w-28 eshop ofC" src="../assets/icon/vue.webp" alt="Vue.js">
+          <img class="w-28 eshop ofC" src="../assets/icon/laravel.webp" alt="laravel">
         </aside>
       </div>
 
@@ -37,11 +37,11 @@
       <div v-observe-visibility="{callback:visibilityProjectElectronic, intersection:{threshold:0.5}}" class="d-flex flex-col mx-9">
         <p class="text-white text-2xl projectElectronic">Projet d'application Mobile effectué en fin de 3ème année.</p>
         <p class="text-white text-2xl projectElectronic">Langages utilisés : <span class="font-bold">React Native</span> et <span class="font-bold">Laravel</span></p>
-        <p class="text-white text-2xl projectElectronic">Lien du github de l'application : <a class="shop font-bold" href="https://github.com/ElieDahrouj/electronic_repair" target="_blank">Electronic Repair</a></p>
+        <p class="text-white text-2xl projectElectronic">Lien du github de l'application : <a class="shop font-bold" rel="noopener" href="https://github.com/ElieDahrouj/electronic_repair" target="_blank">Electronic Repair</a></p>
 
         <aside class="d-flex justify-around align-middle mt-14">
-          <img class="w-28 projectElectronic" src="../assets/icon/react-native.webp" alt="react native">
-          <img class="w-28 projectElectronic" src="../assets/icon/vue.webp" alt="Vue.js">
+          <img class="w-28 projectElectronic ofC" src="../assets/icon/react-native.webp" alt="react native">
+          <img class="w-28 projectElectronic ofC" src="../assets/icon/vue.webp" alt="Vue.js">
         </aside>
       </div>
     </div>
@@ -52,8 +52,8 @@
         <p class="text-white weatherApi text-2xl">Langages utilisés : <span class="font-bold">Vue.js</span> et <span class="font-bold">Ionic</span></p>
 
         <aside class="d-flex justify-around align-middle mt-14">
-          <img class="w-28 weatherApi" src="../assets/icon/ionic.webp" alt="Ionic">
-          <img class="w-28 weatherApi" src="../assets/icon/vue.webp" alt="Vue.js">
+          <img class="w-28 weatherApi ofC" src="../assets/icon/ionic.webp" alt="Ionic">
+          <img class="w-28 weatherApi ofC" src="../assets/icon/vue.webp" alt="Vue.js">
         </aside>
       </div>
 
