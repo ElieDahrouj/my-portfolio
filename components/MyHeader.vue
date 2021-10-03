@@ -4,10 +4,10 @@
 
     <h1 class="title">Développeur Web Full Stack </h1>
 
-    <h4 class="txt">
+    <h2 class="txt">
       Passioné par les dernières nouveautés technologiques, j'adore relever des défis afin
       d’approfondir mon expérience en tant que développeur.
-    </h4>
+    </h2>
   </header>
 </template>
 
