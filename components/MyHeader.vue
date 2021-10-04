@@ -8,6 +8,10 @@
       Passioné par les dernières nouveautés technologiques, j'adore relever des défis afin
       d’approfondir mon expérience en tant que développeur.
     </h2>
+
+    <img class="w-56 absolute circle mbms" src="../assets/picture/circle.webp" alt="circle">
+
+    <img class="w-56 absolute donut mbms" src="../assets/picture/donut.webp" alt="donut">
   </header>
 </template>
 
@@ -34,10 +38,21 @@
   visibility: hidden;
   transform: translateX(100%);
 }
-
-  @media all and (max-width: 426px) {
-    .introduceMyself {
-      width: 95%;
-    }
+.circle {
+  right: 10%;
+  top: 2%;
+  transform: scale(0.7);
+  z-index: 0;
+}
+.donut{
+  transform: scale(0.5);
+  z-index: 0;
+  bottom: 5%;
+  right: 0;
+}
+@media all and (max-width: 426px) {
+  .introduceMyself {
+    width: 95%;
   }
+}
 </style>

@@ -28,4 +28,24 @@ export default {
 .ofC{
   object-fit: contain;
 }
+
+.mbms{
+  mix-blend-mode: screen;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bcbaba;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bf49e5;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #482df3;
+}
 </style>

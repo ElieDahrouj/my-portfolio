@@ -1,7 +1,43 @@
+// this.$gasp.registerEffect({
+//   name:"animeElement",
+//   effect:(targets, config) =>{
+//     return this.$gsap.to(targets,{
+//       x:config.x,
+//       y:config.y
+//     })
+//   }
+// })
+
+
+
 export default {
   mounted() {
     this.$gsap.config({
-      nullTargetWarn:false
+    nullTargetWarn:false
+    })
+    document.body.addEventListener("mousemove", event =>{
+      const mouseY = event.clientY
+      const mouseX = event.clientX
+
+      this.$gsap.to('.circle',{
+        x:mouseX/40,
+        y:mouseY/40
+      })
+
+      this.$gsap.to('.circleProject',{
+        x:mouseX/40,
+        y:mouseY/40
+      })
+
+      this.$gsap.to('.donut',{
+        x:-mouseX/60,
+        y:-mouseY/60
+      })
+
+      this.$gsap.to('.donutProject',{
+        x:-mouseX/60,
+        y:-mouseY/60
+      })
     })
 
     this.$gsap.timeline({

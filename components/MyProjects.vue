@@ -2,6 +2,8 @@
   <section class="myProject">
     <h1>Mes projets</h1>
 
+    <img class="w-56 absolute circleProject mbms" src="../assets/picture/circle.webp" alt="circle">
+
     <div v-observe-visibility="{callback:visibilityShopApp, intersection:{threshold:0.5}}" class="d-flex justify-around mt-12 fw">
       <img class="w-60 m-4" src="../assets/qrCodes/heavensShopApplication.png" alt="qrCode heavens shop application">
 
@@ -56,13 +58,24 @@
           <img class="w-28 weatherApi ofC" src="../assets/icon/vue.webp" alt="Vue.js">
         </aside>
       </div>
-
+      <img class="w-56 absolute donutProject mbms" src="../assets/picture/donut.webp" alt="circle">
       <img class="w-60 m-4" src="../assets/qrCodes/weather.png" alt="weather application">
     </div>
   </section>
 </template>
 
 <style>
+.donutProject{
+  transform: scale(0.6);
+  z-index: 0;
+  bottom: -15%;
+  left: -7%;
+}
+.circleProject {
+  left: 4%;
+  transform: scale(0.8);
+  z-index: 0;
+}
 .eshop{
   opacity: 0;
   visibility: hidden;
