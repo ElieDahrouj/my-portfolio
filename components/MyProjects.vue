@@ -5,7 +5,7 @@
     <img class="w-56 absolute circleProject mbms" src="../assets/picture/circle.webp" alt="circle">
 
     <div v-observe-visibility="{callback:visibilityShopApp, intersection:{threshold:0.5}}" class="d-flex justify-around mt-12 fw">
-      <img class="w-60 m-4" src="../assets/qrCodes/heavensShopApplication.png" alt="qrCode heavens shop application">
+      <img class="w-60 m-4" src="../assets/qrCodes/heavensShopApplication.svg" alt="qrCode heavens shop application">
 
       <div class="d-flex flex-col mx-9">
         <p class="text-white text-2xl shopApp">Projet d'application mobile effectué en fin de 2ème année.</p>
@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div v-observe-visibility="{callback:visibilityEshop, intersection:{threshold:0.5}}" class="d-flex justify-around mt-24 fw">
+    <div v-observe-visibility="{callback:visibilityEshop, intersection:{threshold:0.5}}" class="d-flex justify-around mt-24 fw relative">
       <div class="d-flex flex-col mx-9">
         <p class="text-white text-2xl eshop">Projet d'e-commerce effectué en Full Stack en fin de 2ème année.</p>
         <p class="text-white text-2xl eshop">Langages utilisés : <span class="font-bold">Vue.js</span> et <span class="font-bold">Laravel</span></p>
@@ -29,6 +29,9 @@
           <img class="w-28 eshop ofC" src="../assets/icon/laravel.webp" alt="laravel">
         </aside>
       </div>
+
+      <img class="w-56 absolute miniDonut miniDonutFirst mbms" src="../assets/picture/donut.webp" alt="circle">
+      <img class="w-56 absolute miniDonut miniDonutsSecond mbms" src="../assets/picture/donut.webp" alt="circle">
 
       <img class="w-60 m-4" src="../assets/qrCodes/heavensShopEcommerce.png" alt="heavens shop e-commerce">
     </div>
@@ -58,18 +61,32 @@
           <img class="w-28 weatherApi ofC" src="../assets/icon/vue.webp" alt="Vue.js">
         </aside>
       </div>
+
       <img class="w-56 absolute donutProject mbms" src="../assets/picture/donut.webp" alt="circle">
+
       <img class="w-60 m-4" src="../assets/qrCodes/weather.png" alt="weather application">
     </div>
   </section>
 </template>
 
 <style>
+.miniDonut{
+  transform: scale(0.2);
+  z-index: 0;
+}
+.miniDonutFirst{
+  top: 15%;
+  right: -5%;
+}
+.miniDonutsSecond{
+  top: 10%;
+  right: -17%;
+}
 .donutProject{
   transform: scale(0.6);
   z-index: 0;
-  bottom: -15%;
-  left: -7%;
+  bottom: 29%;
+  left: -13%;
 }
 .circleProject {
   left: 4%;

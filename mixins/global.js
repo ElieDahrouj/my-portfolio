@@ -15,6 +15,7 @@ export default {
     this.$gsap.config({
     nullTargetWarn:false
     })
+
     document.body.addEventListener("mousemove", event =>{
       const mouseY = event.clientY
       const mouseX = event.clientX
@@ -37,6 +38,16 @@ export default {
       this.$gsap.to('.donutProject',{
         x:-mouseX/60,
         y:-mouseY/60
+      })
+
+      this.$gsap.to('.miniDonutFirst',{
+        x:mouseX/60,
+        y:mouseY/60
+      })
+
+      this.$gsap.to('.miniDonutsSecond',{
+        x:-mouseX/70,
+        y:-mouseY/70
       })
     })
 
