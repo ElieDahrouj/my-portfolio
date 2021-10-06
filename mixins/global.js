@@ -7,18 +7,21 @@
 //     })
 //   }
 // })
-
-
-
 export default {
   mounted() {
     this.$gsap.config({
     nullTargetWarn:false
     })
+    const NewPositionCursor = document.querySelector('.cursor')
 
     document.body.addEventListener("mousemove", event =>{
       const mouseY = event.clientY
       const mouseX = event.clientX
+
+      this.$gsap.to('.cursor',{
+        x:mouseX-(NewPositionCursor.offsetWidth/2),
+        y:mouseY-(NewPositionCursor.offsetHeight/2),
+      })
 
       this.$gsap.to('.circle',{
         x:mouseX/40,
@@ -144,6 +147,16 @@ export default {
           })
       }
     },
+    btnHoverEnterMouse(){
+      this.$gsap.to('.cursor',{
+        filter: "drop-shadow(0 0 0.75rem gold)",
+      })
+    },
+    btnHoverLeaveMouse(){
+      this.$gsap.to('.cursor',{
+        filter: "drop-shadow(0 0 0.75rem transparent)",
+      })
+    }
   }
 }
 

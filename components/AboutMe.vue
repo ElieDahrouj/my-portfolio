@@ -15,7 +15,7 @@
       </aside>
 
       <div class="w-full btnDiv justify-center align-middle flex btn">
-        <button class="btnContainer">
+        <button class="btnContainer" @mouseover="btnHoverEnterMouse" @mouseleave="btnHoverLeaveMouse">
           <a href="/CV/CV-DAHROUJ.pdf" download>Télécharger mon CV</a>
         </button>
       </div>
