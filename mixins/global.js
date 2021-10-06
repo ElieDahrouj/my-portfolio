@@ -156,7 +156,25 @@ export default {
       this.$gsap.to('.cursor',{
         filter: "drop-shadow(0 0 0.75rem transparent)",
       })
-    }
+    },
+    fiveStarEnterHover(){
+      this.$gsap.timeline()
+      .to('.fiveStar',{
+        autoAlpha:1
+      })
+      .to('.cursor',{
+        filter: "drop-shadow(0 -6mm 4mm rgb(160, 0, 210))",
+      },'<')
+  },
+    fiveStarLeaverHover(){
+      this.$gsap.timeline()
+      .to('.fiveStar',{
+        autoAlpha:0
+      })
+      .to('.cursor',{
+        filter: "drop-shadow(0 -6mm 4mm transparent)",
+      },'<')
+    },
   }
 }
 

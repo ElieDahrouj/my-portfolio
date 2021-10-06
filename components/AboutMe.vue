@@ -118,7 +118,7 @@
     text-align: center
   }
   .btnContainer:hover{
-    transform: scale(.8);
+    transform: scale(.9);
   }
 
   @media all and (max-width: 958px) {
