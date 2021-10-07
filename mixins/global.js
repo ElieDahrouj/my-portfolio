@@ -199,6 +199,36 @@ export default {
           filter: "drop-shadow(0 -6mm 4mm transparent)",
         },'<')
     },
+    mouseHoverLink(){
+      let manyLink = document.querySelectorAll('.mouseHoverLink')
+
+      for (let i = 0; i < manyLink.length; i++) {
+        if (manyLink[i].matches('.mouseHoverLink')) {
+          const msg = `<span>Cliquez-ici</span>`
+          document.querySelector('.message').innerHTML = msg
+
+          this.$gsap.to('.message',{
+            autoAlpha:1,
+            x:0,
+            background:"#c0c3cb"
+          })
+        }
+      }
+    },
+    mouseLeaveHoverLink(){
+      let manyLink = document.querySelectorAll('.mouseHoverLink')
+
+      for (let i = 0; i < manyLink.length; i++) {
+        if (manyLink[i].matches('.mouseHoverLink')) {
+          this.$gsap.to('.message',{
+            autoAlpha:0,
+            background:"#251c79",
+            x:"-65%",
+            duration:0.2,
+          })
+        }
+      }
+    }
   }
 }
 

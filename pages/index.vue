@@ -2,6 +2,7 @@
   <div class="bgCustom py-7">
     <div class="cursor">
       <img src="../assets/picture/radar.webp" alt="radar dragon ball z">
+      <div class="message"></div>
     </div>
 
     <MyHeader/>
@@ -27,6 +28,21 @@ export default {
 <style>
 *{
   cursor: none;
+}
+.message{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-75%);
+  background: transparent;
+  width: 83px;
+  padding: 2px 4px;
+  border-radius: 0 6px 6px 0;
+  border: none;
+  position: absolute;
+  top: 30%;
+  left: 89%;
+  z-index: -1;
+  color: #003101;
 }
 .cursor{
    position: fixed;

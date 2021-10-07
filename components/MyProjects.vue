@@ -23,7 +23,7 @@
       <div class="d-flex flex-col mx-9">
         <p class="text-white text-2xl eshop">Projet d'e-commerce effectué en Full Stack en fin de 2ème année.</p>
         <p class="text-white text-2xl eshop">Langages utilisés : <span class="font-bold">Vue.js</span> et <span class="font-bold">Laravel</span></p>
-        <p class="text-white text-2xl eshop">Lien version Desktop : <a class="shop font-bold" rel="noopener" href="https://heavens-shop.herokuapp.com/" target="_blank">E-commerce</a></p>
+        <p class="text-white text-2xl eshop">Lien version Desktop : <a @mouseover="mouseHoverLink" @mouseleave="mouseLeaveHoverLink" class="shop font-bold mouseHoverLink" rel="noopener" href="https://heavens-shop.herokuapp.com/" target="_blank">E-commerce</a></p>
 
         <aside class="d-flex justify-around align-middle mt-14">
           <img class="w-28 eshop ofC" src="../assets/icon/vue.webp" alt="Vue.js">
@@ -43,7 +43,7 @@
       <div v-observe-visibility="{callback:visibilityProjectElectronic, intersection:{threshold:0.5}}" class="d-flex flex-col mx-9">
         <p class="text-white text-2xl projectElectronic">Projet d'application Mobile effectué en fin de 3ème année.</p>
         <p class="text-white text-2xl projectElectronic">Langages utilisés : <span class="font-bold">React Native</span> et <span class="font-bold">Laravel</span></p>
-        <p class="text-white text-2xl projectElectronic">Lien du github de l'application : <a class="shop font-bold" rel="noopener" href="https://github.com/ElieDahrouj/electronic_repair" target="_blank">Electronic Repair</a></p>
+        <p class="text-white text-2xl projectElectronic">Lien du github de l'application : <a class="shop font-bold mouseHoverLink" @mouseover="mouseHoverLink" @mouseleave="mouseLeaveHoverLink" rel="noopener" href="https://github.com/ElieDahrouj/electronic_repair" target="_blank">Electronic Repair</a></p>
 
         <aside class="d-flex justify-around align-middle mt-14">
           <img class="w-28 projectElectronic ofC" src="../assets/icon/react-native.webp" alt="react native">
