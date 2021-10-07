@@ -175,6 +175,30 @@ export default {
         filter: "drop-shadow(0 -6mm 4mm transparent)",
       },'<')
     },
+    fourStarEnterHover(){
+      this.$gsap.timeline()
+        .to('.cpov',{
+          autoAlpha:0
+        })
+        .to('.fourStar',{
+          autoAlpha:1
+        },'>')
+        .to('.cursor',{
+          filter: "drop-shadow(0 -6mm 4mm rgb(160, 0, 210))",
+        },'<')
+    },
+    fourStarLeaverHover(){
+      this.$gsap.timeline()
+        .to('.fourStar',{
+          autoAlpha:0
+        })
+        .to('.cpov',{
+          autoAlpha:1
+        },'>')
+        .to('.cursor',{
+          filter: "drop-shadow(0 -6mm 4mm transparent)",
+        },'<')
+    },
   }
 }
 

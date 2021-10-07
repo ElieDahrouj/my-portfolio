@@ -1,7 +1,7 @@
 <template>
   <div class="bgCustom py-7">
     <div class="cursor">
-      <img src="https://cdn.pixabay.com/photo/2017/01/31/20/13/radar-2026947_960_720.png" alt="radar dragon ball z">
+      <img src="../assets/picture/radar.webp" alt="radar dragon ball z">
     </div>
 
     <MyHeader/>

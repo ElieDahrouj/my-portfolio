@@ -10,7 +10,7 @@
     </h2>
 
     <img @mouseover="fiveStarEnterHover" class="w-56 absolute circle mbms" src="../assets/picture/circle.webp" alt="circle">
-    <img @mouseleave="fiveStarLeaverHover" class="w-56 absolute circle mbms fiveStar z-10" src="../assets/picture/numberFive.png" alt="circle">
+    <img @mouseleave="fiveStarLeaverHover" class="w-56 absolute circle mbms fiveStar z-10" src="../assets/picture/numberFive.webp" alt="five start dbz">
 
     <img class="w-56 absolute donut mbms" src="../assets/picture/donut.webp" alt="donut">
   </header>

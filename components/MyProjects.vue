@@ -2,7 +2,8 @@
   <section class="myProject">
     <h1>Mes projets</h1>
 
-    <img class="w-56 absolute circleProject mbms" src="../assets/picture/circle.webp" alt="circle">
+    <img @mouseover="fourStarEnterHover" class="w-56 absolute circleProject cpov mbms" src="../assets/picture/circle.webp" alt="circle">
+    <img @mouseleave="fourStarLeaverHover" class="w-56 absolute circleProject fourStar mbms" src="../assets/picture/numberFour.webp" alt="dbz four star">
 
     <div v-observe-visibility="{callback:visibilityShopApp, intersection:{threshold:0.5}}" class="d-flex justify-around mt-12 fw">
       <img class="w-60 m-4" src="../assets/qrCodes/heavensShopApplication.svg" alt="qrCode heavens shop application">
@@ -70,6 +71,14 @@
 </template>
 
 <style>
+.cpov{
+  opacity: 1;
+  visibility: unset;
+}
+.fourStar{
+  visibility: hidden;
+  opacity: 0;
+}
 .miniDonut{
   transform: scale(0.2);
   z-index: 0;
